@@ -9,8 +9,9 @@
   <script src="https://static.line-scdn.net/liff/edge/versions/2/sdk.js"></script>
   <script> 
     async function main() {
-      await liff.init({ liffid: "1656956300-xKEN2BdR" }) 
-      await liff.shareTargetPicker([
+      await liff.init({ liffid: "1656956300-xKEN2BdR" })
+      async function sendShare() {  
+      const result =await liff.shareTargetPicker([
     {
     type: "flex",
     altText: "ทดสอบโดยโบ้", 
