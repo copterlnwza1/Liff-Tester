@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF App</title>
   <style>
-    body { padding: 540px }
-    button { display: none; width: 100%; padding: 55px 0; margin: 55px auto }
+    body { padding: 256px }
+    button { display: none; width: 50%; padding: 16px 0; margin: 16px auto }
   </style>
 </head>
 <body>
   <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
-  <button id="btnlogout" onclick="liff.logout()">Log In</button>
+  <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     async function sendShare() {
@@ -29,8 +29,8 @@
               "contents": [
                 {
                   "type": "text",
-                  "text": "Share",
-                  "size": "x50",
+                  "text": "BROWN'S ADVENTURE",
+                  "size": "xl",
                   "gravity": "center",
                   "weight": "bold",
                   "wrap": true
@@ -136,7 +136,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656956300-xKEN2BdR" })
+      await liff.init({ liffId: "YOUR-LIFF-ID" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {
