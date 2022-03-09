@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF App</title>
-  <style>
-    body { padding: 256px }
-    button { display: none; width: 100%; padding: 135px 135; margin: 135px auto }
-  </style>
 </head>
 <body>
-  <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
+  <left><button id="btnShare" onclick="sendShare()">Share Target Picker</button></left>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -21,99 +17,202 @@
           "type": "flex",
           "altText": "ทดสอบโดยโบ้",
           "contents": {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "md",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "BROWN'S ADVENTURE",
-                  "size": "xl",
-                  "gravity": "center",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "spacing": "sm",
-                  "margin": "lg",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Date",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Monday 25, 9:00PM",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "LINE Thailand",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "xxl",
-                      "contents": [
-                        {
-                          "type": "spacer"
-                        },
-                        {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
-                          "size": "xl",
-                          "aspectMode": "cover"
-                        },
-                        {
-                          "type": "text",
-                          "text": "You can enter the theater by using this code instead of a ticket",
-                          "margin": "xxl",
-                          "size": "xs",
-                          "color": "#AAAAAA",
-                          "wrap": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2022/03/07/r2Knqt.jpg",
+        "size": "full",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "3 โปรแรง แตกหนัก",
+            "size": "md",
+            "color": "#130907",
+            "align": "center",
+            "margin": "sm",
+            "weight": "bold"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D",
+              "label": "49 รับ 100"
+            },
+            "margin": "none",
+            "height": "sm",
+            "style": "primary",
+            "color": "#FD8210",
+            "offsetTop": "xs"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D",
+              "label": "75 รับ 100"
+            },
+            "margin": "none",
+            "height": "sm",
+            "style": "primary",
+            "color": "#3DCEEA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D",
+              "label": "30 รับ 100"
+            },
+            "margin": "none",
+            "height": "sm",
+            "style": "primary",
+            "color": "#FD6574",
+            "offsetTop": "xl"
           }
+        ],
+        "paddingAll": "lg",
+        "paddingTop": "none",
+        "offsetTop": "none"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "mega",
+      "hero": {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2022/03/07/r23RyS.jpg",
+        "size": "full",
+        "margin": "none",
+        "aspectRatio": "1:1",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สายมู โปรเสริมดวง",
+            "size": "md",
+            "margin": "none",
+            "weight": "bold",
+            "align": "center",
+            "color": "#130907"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ส่งให้เพื่อน",
+              "uri": "https://liff.line.me/1656956300-xKEN2BdR"
+            },
+            "color": "#F15A0A",
+            "style": "primary",
+            "height": "md",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "gravity": "center",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับยอดเสียคืน",
+              "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D"
+            },
+            "color": "#D21617",
+            "style": "primary",
+            "height": "md",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "none",
+            "gravity": "center",
+            "margin": "xs",
+            "adjustMode": "shrink-to-fit"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2022/03/07/r2w3CE.jpg",
+        "aspectRatio": "1:1",
+        "size": "full",
+        "margin": "none",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://sport.playauto.cloud/?prefix=QU1PTkw%3D"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ข้อดีของเว็บตรง",
+            "margin": "none",
+            "size": "md",
+            "color": "#130907",
+            "weight": "bold",
+            "align": "center"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "uri": "https://lin.ee/OAnsWCj",
+              "label": "ฝาก - ถอน"
+            },
+            "margin": "xs",
+            "height": "md",
+            "style": "primary",
+            "color": "#FF6B71",
+            "offsetTop": "xs"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "uri": "https://bit.ly/3BVjmhi",
+              "label": "ทางเข้าเว็บไซต์"
+            },
+            "margin": "xs",
+            "style": "primary",
+            "color": "#FC4542",
+            "height": "md",
+            "offsetBottom": "none",
+            "offsetTop": "sm"
+          }
+        ]
+      }
+    }
+  ]
+}
         }
       ])
       if (result) {
